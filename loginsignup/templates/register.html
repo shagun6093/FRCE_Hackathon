@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register form</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="static/login.css" />
+  </head>
+  <body>
+    <div class="contact-wrapper">
+      <div class="left-side">
+        <img src="static/Coworking.svg" />
+      </div>
+      <div class="right-side">
+        <h2>Register</h2>
+        <form action="/register" method="post">
+          <div class="form-row">
+            <input id="username" name="username" type="text" required />
+            <span>Username</span>
+          </div>
+          <div class="form-row">
+            <input id="password" name="password" type="password" required />
+            <span>Password</span>
+          </div>
+          <div class="form-row">
+            <input
+              id="confirmation"
+              name="confirmation"
+              type="password"
+              required
+            />
+            <span>Password</span>
+          </div>
+          <div class="mb-3">
+            <label for="acc_type">Select your Account Type :</label>
+            <select name="acc_type" id="acc_type">
+             <!-- <option disable selected> Account Type</option> -->
+              <option value="client">client</option>
+              <option value="worker">worker</option>
+            </select>
+          </div>
+          <div class="form-row"></div>
+          <div class="form-row">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

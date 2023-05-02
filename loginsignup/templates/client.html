@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="static/register_client.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="title"><h3>Details :</h3></div>
+      </div>
+      <div class="content">
+        <form action="/client" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text"  id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text"  id="contact" name="contact" placeholder="Enter your number" required />
+            </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Location</span>
+            <input
+              type="textarea"
+              id="location" name="location"
+              rows="4"
+              cols="100"
+              placeholder="Enter your location"
+              required
+            />
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
